@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+
+
+
+.bg-image {
+  /* The image used */
+  background-image: url("{% static 'img/homebg.jpeg' %}");
+  
+  /* Add the blur effect */
+  /* filter: blur(3px);
+  -webkit-filter: blur(3px); */
+  
+  /* Full height */
+  height: 100%; 
+  
+  object-fit: contain;
+  width:device-width;
+  height:device-height;
+  border: solid 1px;
+  
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  font-size: 2em;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+  
+}
+nav{
+	align-items: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.02);
+	padding-right: 20px;
+
+}
+
+.menu{
+	list-style: none;
+	display: flex;
+    float: right;	
+}
+
+.menu li a{
+	height: 50px;
+	line-height: 50px;
+	margin: 3px;
+	padding: 3px 10px;
+	display: flex;
+	font-size: 1em;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	
+}
+
+a{
+	text-decoration: none;
+}
+
+
+.logo img{
+	height: 100px;
+	padding-left:10px;
+	padding-top: 20px;
+}
+
+
+.btn {background-image: radial-gradient( circle farthest-corner at 16.5% 28.1%,  rgba(15,27,49,1) 0%, rgba(0,112,218,1) 90% )}
+.btn{
+	margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+          }
+
+.btn:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+         
