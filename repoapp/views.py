@@ -18,3 +18,6 @@ def about(request):
 
 def forget(request):
     return render(request, 'forgetpass.html')
+
+def aboutprofile(request):
+    return render(request, 'about1.html')
