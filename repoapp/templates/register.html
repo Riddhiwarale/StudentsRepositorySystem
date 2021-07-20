@@ -1,12 +1,27 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en" dir="ltr">
   <head>
     <meta charset="UTF-8">
     <title>Registration Form</title>
-    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+    <link rel="stylesheet" href="{% static 'css/register.css' %}">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
    </head>
 <body>
+	<section id = "main">
+			<nav>
+				<span class="menu-space" ></span>
+				<ul class = "menu">
+				<li><a href = "{% url 'home' %}" class="btn">Home</a></li>
+				<li><a href = "{% url 'register' %}" class="btn">Sign Up</a></li>
+				<li><a href = "{% url 'login' %}" class="btn">Sign In</a></li>
+				<li><a href = "{% url 'about' %}" class="btn">About us</a></li>
+				</ul>
+				<!-- <a href="" class="logo">
+					<img src="logo.jpg" alt="">
+				</a> -->
+			</nav>
+	</section>
   <div class="container">
     <div class="title">Registration</div>
     <div class="content">
@@ -28,14 +43,14 @@
             <span class="details">Username</span>
             <input type="text" placeholder="" required>
           </div>
-		  <div class="input-box">
+		  <!-- <div class="input-box">
             <span class="details">Current Year</span>
             <input type="text" placeholder="Enter your year" required>
           </div>
 		  <div class="input-box">
             <span class="details">Date of birth</span>
             <input type="text" placeholder="Enter your DOB" required>
-          </div>
+          </div> -->
           <div class="input-box">
             <span class="details">Email</span>
             <input type="text" placeholder="Enter your email" required>

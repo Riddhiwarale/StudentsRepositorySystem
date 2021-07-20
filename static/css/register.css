@@ -15,28 +15,30 @@ body{
   
 }
 .container{
-  /* max-width: 700px;
-  width: 100%; */
   width: 800px;
-  height: 600px;
+  height:500px;
   background-color: #fff;
-  padding: 25px 30px;
+  padding-left:25px;
+  padding-right:25px;
+  padding-top: 0px;
+  padding-bottom:0px;
   border-radius: 5px;
   box-shadow: 0 5px 10px rgba(0,0,0,0.15);
 }
 .container .title{
   font-size: 25px;
+  padding-top: 10px;
   font-weight: 500;
   position: relative;
 }
 .container .title::before{
   content: "";
-  position: absolute;
+  position: relative;
   left: 0;
   bottom: 0;
   height: 3px;
   width: 30px;
-  border-radius: 5px;
+  border-radius: 10px;
   background-image: linear-gradient(135deg, #020024 0%, #090979 35%, #00d4ff 100%);
 
 }
@@ -71,10 +73,7 @@ form .input-box span.details{
 .user-details .input-box input:valid{
   border-color:#18146e;
 }
-/*  form .gender-details .gender-title{
-  font-size: 20px;
-  font-weight: 500;
- } */
+
  form .category{
    display: flex;
    width: 80%;
@@ -86,24 +85,7 @@ form .input-box span.details{
    align-items: center;
    cursor: pointer;
  }
-/*  form .category label .dot{
-  height: 18px;
-  width: 18px;
-  border-radius: 50%;
-  margin-right: 10px;
-  background: #d9d9d9;
-  border: 5px solid transparent;
-  transition: all 0.3s ease;
-}
- #dot-1:checked ~ .category label .one,
- #dot-2:checked ~ .category label .two,
- #dot-3:checked ~ .category label .three{
-   background: #18146e;
-   border-color: #d9d9d9;
- }
- form input[type="radio"]{
-   display: none;
- } */
+
  form .button{
    height: 45px;
    margin: 10px 25px;
@@ -150,3 +132,67 @@ form .user-details .input-box{
     flex-direction: column;
   }
 }
+
+
+nav{
+	align-items: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.01);
+	padding-right: 20px;
+
+}
+
+.menu{
+	list-style: none;
+	display: flex;
+    float: right;	
+}
+
+.menu li a{
+	height: 50px;
+	line-height: 50px;
+	margin: 3px;
+	padding: 3px 10px;
+	display: flex;
+	font-size: 1em;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	
+}
+
+a{
+	text-decoration: none;
+}
+
+
+.logo img{
+	height: 100px;
+	padding-left:10px;
+	padding-top: 20px;
+}
+
+
+.btn {background-image: radial-gradient( circle farthest-corner at 16.5% 28.1%,  rgba(15,27,49,1) 0%, rgba(0,112,218,1) 90% )}
+.btn{
+	margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+          }
+
+.btn:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+         

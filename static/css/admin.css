@@ -1,0 +1,135 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+body{
+	 height: 100vh;
+    overflow: scroll;
+    background-image: linear-gradient(135deg, #020024 0%, #090979 35%, #00d4ff 100%);
+	justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+ h1 {
+        font-weight: 900;
+        text-align: center;
+        color: #fff;
+        padding: 20px 10px;
+		padding-top: 0px;
+}
+
+.container{
+    position: relative;
+	width: 1229px;
+	margin-left: 50px;
+	margin-right: 50px;
+	padding: 30px;
+    background:#fff;
+    border-radius: 10px;
+    display: flex;
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+}
+
+.container p {
+	font-size: 2em;
+	color: navy;
+	padding-top: 60px;
+	margin-right: 20px;
+
+}
+
+.checkbox{
+	color: navy;
+	font-size: 1.5em;
+	width: 1050px;
+	padding-left: 50px;
+}
+
+.branch{
+	padding: 20px;
+}
+
+.column1 {
+  float: left;
+  width: 65%;
+  padding: 10px;
+}
+
+.column2 {
+  float: left;
+  width: 35%;
+  padding: 10px;
+}
+
+.date{
+	margin-top: 40px;
+	color: navy;
+	font-size: 1.5em;
+	width: 1050px;
+	padding-left: 50px;
+}
+
+.col {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+
+.year{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	color: navy;
+	font-size: 1.5em;
+	width: 1050px;
+	padding-left: 50px;
+}
+
+.col1 {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+input[type="date"], focus {
+    color: black;
+	margin-left: 50px;
+    font-size: 18px;
+    border:1px solid #ecf0f1;
+    background:#ecf0f1;
+    padding:5px;
+    display: inline-block;
+    visibility: visible ;
+}
+
+.button{
+	padding-left: 50px;
+}
+
+input[type="submit"]{
+  width: 100%;
+  height: 50px;
+  border: 1px solid;
+  background: linear-gradient(135deg, #020024 0%, #090979 35%, #00d4ff 100%);
+  border-radius: 25px;
+  font-size: 18px;
+  color: #e9f4fb;
+  font-weight: 700;
+  cursor: pointer;
+  outline: none;
+  text-decoration: none;
+}
+input[type="submit"]:hover{
+   background-image: linear-gradient(-135deg, #020024 0%, #090979 35%, #00d4ff 100%);
+}

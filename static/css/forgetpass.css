@@ -19,6 +19,7 @@ body{
   left: 50%;
   transform: translate(-50%, -50%);
   width: 400px;
+  height: 450px;
   background: white;
   border-radius: 10px;
   box-shadow: 10px 10px 15px rgba(0,0,0,0.05);
@@ -55,7 +56,15 @@ body{
 
 form .txt_field{
   position: relative;
-  margin: 30px 0;
+  margin: 40px 0;
+
+}
+
+.txt_field i {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+     
 }
 
 .txt_field input{
@@ -85,22 +94,6 @@ form .txt_field{
   border-color: #18146e;
 }
 
-.txt_field i {
-    position: absolute;
-    left: 15px;
-    top: 12px;
-
-}
-
-.pass a{
-  margin: -5px 0 20px 5px;
-  color: #18146e;
-  cursor: pointer;
-}
-.pass a:hover{
-  text-decoration: underline;
-  color: #070222;
-}
 input[type="submit"]{
   width: 100%;
   height: 50px;
@@ -112,25 +105,12 @@ input[type="submit"]{
   font-weight: 700;
   cursor: pointer;
   outline: none;
-  margin-top: 20px;
 }
+
 input[type="submit"]:hover{
    background-image: linear-gradient(-135deg, #020024 0%, #090979 35%, #00d4ff 100%);
 }
-.signup_link{
-  margin: 30px 0;
-  text-align: center;
-  font-size: 16px;
-  color: #666666;
-}
-.signup_link a{
-  color: #18146e;
-  text-decoration: none;
-}
-.signup_link a:hover{
-  text-decoration: underline;
-  color: #070222;
-}
+
 
 nav{
 	align-items: center;
@@ -193,4 +173,9 @@ a{
     color: #fff;
     text-decoration: none;
 }
-         
+
+
+ @media(max-width: 584px){
+ .container{
+  max-width: 100%;
+}

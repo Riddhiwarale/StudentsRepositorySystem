@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+{% load static %}
+<html dir="ltr" lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Forget Password</title>
+    <link href="{% static 'css/forgetpass.css' %}" rel="stylesheet">
+</head>
+<body>
+<section id="main">
+    <nav>
+        <span class="menu-space"></span>
+        <ul class="menu">
+            <li><a class="btn" href="{% url 'home' %}">Home</a></li>
+            <li><a class="btn" href="{% url 'register' %}">Sign Up</a></li>
+            <li><a class="btn" href="{%url 'login' %}">Sign In</a></li>
+            <li><a class="btn" href="{% url 'about' %}">About us</a></li>
+        </ul>
+        <!-- <a href="" class="logo">
+            <img src="logo.jpg" alt="">
+        </a> -->
+    </nav>
+</section>
+<div class="center">
+    <h1>Forgot Password ?</h1>
+
+    <form method="post">
+        <div class="txt_field">
+            <input placeholder="Username" required type="text">
+            <i class="fas fa-user"></i>
+        </div>
+
+        <div class="txt_field">
+            <input placeholder="Password" required type="password">
+            <i class="fas fa-lock"></i>
+        </div>
+
+        <div class="txt_field">
+            <input placeholder="Confirm Password" required type="password">
+            <i class="fas fa-lock"></i>
+        </div>
+
+
+        <input type="submit" value="Submit">
+
+
+    </form>
+</div>
+
+</body>
+</html>

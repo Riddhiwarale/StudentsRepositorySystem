@@ -1,38 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Login Form</title>
-    <link   href="{% static 'css/login.css' %}" rel="stylesheet"  type="text/css">
-</head>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+  </head>
+  <body>
+    <section id = "main">
+			<nav>
+				<span class="menu-space" ></span>
+				<ul class = "menu">
+				<li><a href = "{% url 'home' %}" class="btn">Home</a></li>
+				<li><a href = "{% url 'register' %}" class="btn">Sign Up</a></li>
+				<li><a href = "{% url 'login' %}" class="btn">Sign In</a></li>
+				<li><a href = "{% url 'about' %}" class="btn">About us</a></li>
+				</ul>
+				<!-- <a href="" class="logo">
+					<img src="logo.jpg" alt="">
+				</a> -->
+			</nav>
+		</section>
+		<div class="center">
+		<h1>Login</h1>
+		  <form method="post">
+			<div class="txt_field">
+			  <input type="text" placeholder="Username" required>
+			  <i class="fas fa-user"></i>
+			</div>
+			<div class="txt_field">
+			  <input type="password" placeholder="Password" required>
+				<i class="fas fa-lock"></i>
+			  </div>
+			<div class="pass">
+				<a href="{% url 'forget' %}">Forgot Password?</a>
+			</div>
+			<input type="submit" value="Login">
+			<div class="signup_link">
+			  Don't have an account? <a href="{% url 'register' %}">Signup</a>
+			</div>
+		  </form>
+		</div>
 
-<body>
-     <section>
-        
-           <div class="box">
-
-            <div class="container">
-                <div class="form">
-                    <h2>Login Form</h2>
-                    <form>
-                        <div class="inputBox">
-                         <input type="text" placeholder="Username">   
-                        </div>
-                        <div class="inputBox">
-                         <input type="password" placeholder="Password">   
-                        </div>
-                        <div class="forget"><a href="#">Forget password ?</a></div>
-                        <div class="inputBox">
-                         <input type="submit" value="Login">   
-                        </div>
-                        <p class="text">Don't have an account ? 
-                            <a href="register.html">Sign up</a>
-                        </p>
-                    </form>
-                </div>
-            </div>
-               
-           </div>
-     </section>
-</body>
+  </body>
 </html>
