@@ -1,30 +1,8 @@
-<!DOCTYPE html>
-{% load static %}
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="UTF-8">
-    <title>MainPage</title>
-    <link rel="stylesheet" href="{% static 'css/main.css' %}">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   </head>
-    <body>
-    <section id = "main">
-            <nav>
-                <span class="menu-space" ></span>
-                <ul class = "menu">
-                   <li><a href = "{% url 'home' %}" class="btn">Home</a></li>
-                   <li><a href = "#Educational Details" class="btn">Educational Details</a></li>
-                   <li><a href = "#Certificate" class="btn">Certificate</a></li>
-                   <li><a href = "{% url 'home' %}" class="btn">Logout</a></li>
-                   <li><a href = "{% url 'about1' %}" class="btn">Aboutus</a></li>
-                </ul>
-                <!-- <a href="" class="logo">
-                    <img src="logo.jpg" alt="">
-                </a> -->
-            </nav>
-    </section>
+{% extends 'base.html' %}
 
-    <div class="row">
+{% block content %}
+
+<div class="row">
           <div class="column">
             <div class="card" id="Home">
 				<h1 align="left">Personal Details</h1>
@@ -291,5 +269,4 @@
 			</div>
 		</div>
         </div>
-    </body>
-</html>
+    {% endblock %}

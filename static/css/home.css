@@ -9,26 +9,15 @@ body, html {
   margin: 0;
 }
 
-.bg-image {
-  /* The image used */
-  background-image: url("../img/homebg.jpg");
-  
-  /* Add the blur effect */
-  /* filter: blur(3px);
-  -webkit-filter: blur(3px); */
-  
-  /* Full height */
-  height: 100%; 
-  
-  object-fit: contain;
-  width:device-width;
-  height:device-height;
-  border: solid 1px;
-  
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.background-image {
+
+ width: 100%;
+ text-align: center;
+ background-image: url("../img/homebg.jpeg");
+ background-size: cover;
+ background-attachment: fixed;
+ background-repeat: no-repeat;
+ background-position: center;
 }
 
 .bg-text {
