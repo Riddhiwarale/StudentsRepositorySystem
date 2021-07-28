@@ -24,3 +24,6 @@ def aboutprofile(request):
 
 def heytanish(request):
     return render(request, 'hey.html')
+
+def adminpage(request):
+    return render(request, 'about.html')
