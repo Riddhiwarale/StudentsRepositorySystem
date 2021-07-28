@@ -21,3 +21,6 @@ def forget(request):
 
 def aboutprofile(request):
     return render(request, 'about1.html')
+
+def heytanish(request):
+    return render(request, 'hey.html')

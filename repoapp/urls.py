@@ -10,4 +10,5 @@ urlpatterns = [
     path('about/', views.about, name='about'),
     path('forget/', views.forget, name='forget'),
     path('aboutprofile/', views.aboutprofile, name='about1'),
+
 ]
